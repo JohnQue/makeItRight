@@ -100,14 +100,26 @@ p.desc{
 
 .icon{
     color: #ddd;
+    padding: 5px;
 }
 .icon .octicon{
     text-decoration: none; 
-    opacity: 0.4;
+    opacity: 0.8;
 
 }
 
 .icon:hover .octicon{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.blog{
+    width: 96px;
+    height: 96px;
+    opacity: 0.8;
+}
+
+.blog:hover{
     transform: scale(1.05);
     opacity: 1;
 }
