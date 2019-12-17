@@ -27,16 +27,21 @@ p.desc{
     background: white;
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;    
-    padding:0 4px;
+.travel-row{
+    display: flex;    
+    padding: 0 4px;
+    flex-wrap: wrap;
 }
 
-.column{
-    flex: 25%;
-    max-width: 25%;
+.travel-row .column{
     padding:0 4px;
+    max-width: 25%;
+    flex: 25%;
+}
+
+.travel-row .column .travel-img{
+    margin-top: 8px;
+    border-radius: 5px;
 }
 
 .header h1{
@@ -81,10 +86,10 @@ p.desc{
     padding: 20px;
 }
 
-.travel-img{
+img{
     width: 100%;
-    border-radius: 5px;
 }
+
 .card{
     border-radius: 10px;
     background-color: white;
@@ -110,21 +115,20 @@ p.desc{
 
 @media screen and (max-width: 800px) {
     .leftcolumn, .midcolumn, .rightcolumn {   
-      width: 100%;
-      padding: 0;
+        width: 100%;
+        padding: 0;
     }
-    .column{
+    .travel-row .column{
         flex: 50%;
         max-width: 50%;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .topnav a {
-      float: none;
-      width: 100%;
+        width: 100%;
     }
-    .columns{
+    .travel-row .column{
         flex: 100%;
         max-width: 100%;
     }
@@ -134,6 +138,7 @@ p.desc{
     color: #ddd;
     padding: 5px;
 }
+
 .icon .octicon{
     text-decoration: none;
     opacity: 0.8;
