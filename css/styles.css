@@ -7,6 +7,14 @@ body{
     background: #f1f1f1;
 }
 
+.clock, .weather{
+    text-align: end;
+}
+
+.weather{
+    margin-bottom: 10px;
+}
+
 p.desc{
     text-align: center;
     font-weight: 500;
@@ -17,6 +25,18 @@ p.desc{
     padding: 30px;
     text-align: center;
     background: white;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;    
+    padding:0 4px;
+}
+
+.column{
+    flex: 25%;
+    max-width: 25%;
+    padding:0 4px;
 }
 
 .header h1{
@@ -31,6 +51,7 @@ p.desc{
 
 .topnav a{
     float: left;
+    font-weight: 450;
     text-decoration: none;
     color: #f2f2f2;
     padding: 14px 16px;
@@ -38,13 +59,13 @@ p.desc{
 }
 
 .topnav a:hover{
-    background-color: #ddd;
-    color: black;
+    background-color: #222;
+    color: #f2f2f2;
 }
 
-.leftcolumn{
+.leftcolumn, .midcolumn{
     float: left;
-    width: 85%;
+    width: 42.5%;
     padding-right: 20px;
 }
 
@@ -60,7 +81,10 @@ p.desc{
     padding: 20px;
 }
 
-
+.travel-img{
+    width: 100%;
+    border-radius: 5px;
+}
 .card{
     border-radius: 10px;
     background-color: white;
@@ -85,9 +109,13 @@ p.desc{
 }
 
 @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {   
+    .leftcolumn, .midcolumn, .rightcolumn {   
       width: 100%;
       padding: 0;
+    }
+    .column{
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
@@ -96,6 +124,10 @@ p.desc{
       float: none;
       width: 100%;
     }
+    .columns{
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 .icon{
@@ -103,9 +135,8 @@ p.desc{
     padding: 5px;
 }
 .icon .octicon{
-    text-decoration: none; 
+    text-decoration: none;
     opacity: 0.8;
-
 }
 
 .icon:hover .octicon{
@@ -120,6 +151,6 @@ p.desc{
 }
 
 .blog:hover{
-    transform: scale(1.05);
+    transform: scale(1.1) translateY(-10px);
     opacity: 1;
 }
