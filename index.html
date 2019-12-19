@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Make It Right!!</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
 </head>
 <body>
     <div class="js-clock clock"></div>
@@ -16,10 +19,11 @@
     </div>
 
     <div class="topnav">
-        <a href="history.html">History</a>
+        <a href="index.html" class="home">Home</a>
         <a href="work.html">Work</a>
         <a href="travel.html">Travel</a>
-        <a href="habit.html" style="float:right">Habit</a>
+        <a href="habit.html">Habit</a>
+        <a href="about.html" style="float:right">About</a>
     </div>
 
     <div class="row">
@@ -27,14 +31,18 @@
             <div class="card">
                 <h2>오늘의 사진</h2>
                 <h5>도쿄도, 시나가와구, Dec 16, 2019</h5>
-                <img src="images/20191216_195644.jpg" style="width:100%" alt="Image">
+                <a href="images/20191216_195644.jpg" class="detailed_img">
+                    <img src="images/20191216_195644.jpg" style="width:100%" alt="Image">
+                </a>
                 <p class="desc">JR 아키하바라역에서...</p>
                 <p>어제는 회사 동료와 아키하바라역에 빅카메라, 요도바시카메라를 가서 마우스와 키보드 등등을 구경했습니다.</p>
             </div>
             <div class="card">
                 <h2>오늘의 사진</h2>
                 <h5>도쿄도, 시나가와구, Dec 16, 2019</h5>
-                <img src="images/20191203_082747.jpg" style="width:100%" alt="Image">
+                <a href="images/20191203_082747.jpg" class="detailed_img">
+                    <img src="images/20191203_082747.jpg" style="width:100%" alt="Image">
+                </a>
                 <p class="desc">오사키 우편국 앞에서...</p>
                 <p>현재 저는 도쿄 시나가와구 고탄다 역 근처에 있는 아시아정보시스템(AIS)이라는 회사에서 글로벌 인턴십을 진행하고 있습니다. 20일에 업무를 마치고 27일 한국으로 돌아갑니다!</p>
             </div>
@@ -50,7 +58,9 @@
             <div class="card">
                 <h2>오늘의 영상</h2>
                 <h5>유투버 : inliving</h5>
-                <img src="images/20191203_082747.jpg" style="width:100%" alt="Image">
+                <a href="images/20191203_082747.jpg" class="detailed_img">
+                    <img src="images/20191203_082747.jpg" style="width:100%; cursor:pointer;" alt="Image">
+                </a>
                 <p class="desc">引越し直後、無印良品の購入品</p>
                 <p>새로운 집으로 옮겨서 무인양품에서 산 물건들을 소개하는 영상</p>
             </div>
@@ -91,5 +101,6 @@
 
     <script src="js/clock.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/img.js"></script>
 </body>
 </html>
