@@ -14,8 +14,10 @@
     <div class="js-clock clock"></div>
     <div class="js-weather weather"></div>
     <div class="header">
-        <h1>Make It Right</h1>
-        <h4>Just do it and make it right.</h4>
+        <div class="header-fade">
+            <h1>Make It Right</h1>
+            <h4>Just do it and make it right.</h4>
+        </div>
     </div>
 
     <div class="topnav">
@@ -31,7 +33,7 @@
             <div class="card">
                 <h2>오늘의 사진</h2>
                 <h5>도쿄도, 시나가와구, Dec 16, 2019</h5>
-                <a href="images/20191216_195644.jpg" class="detailed_img">
+                <a href="images/20191216_195644.jpg" class="detailed-img" id="1">
                     <img src="images/20191216_195644.jpg" style="width:100%" alt="Image">
                 </a>
                 <p class="desc">JR 아키하바라역에서...</p>
@@ -40,7 +42,7 @@
             <div class="card">
                 <h2>오늘의 사진</h2>
                 <h5>도쿄도, 시나가와구, Dec 16, 2019</h5>
-                <a href="images/20191203_082747.jpg" class="detailed_img">
+                <a href="images/20191203_082747.jpg" class="detailed-img" id="2">
                     <img src="images/20191203_082747.jpg" style="width:100%" alt="Image">
                 </a>
                 <p class="desc">오사키 우편국 앞에서...</p>
@@ -58,7 +60,7 @@
             <div class="card">
                 <h2>오늘의 영상</h2>
                 <h5>유투버 : inliving</h5>
-                <a href="images/20191203_082747.jpg" class="detailed_img">
+                <a href="images/20191203_082747.jpg" class="detailed-img">
                     <img src="images/20191203_082747.jpg" style="width:100%; cursor:pointer;" alt="Image">
                 </a>
                 <p class="desc">引越し直後、無印良品の購入品</p>
@@ -102,5 +104,6 @@
     <script src="js/clock.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/img.js"></script>
+    <script src="js/fade.js"></script>
 </body>
 </html>

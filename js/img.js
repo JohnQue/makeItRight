@@ -1,4 +1,4 @@
-$('.detailed_img').magnificPopup({
+$('.detailed-img').magnificPopup({
     type: 'image',
     closeOnContentClick: true,
     closeBtnInside: true,
