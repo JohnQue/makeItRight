@@ -90,6 +90,18 @@ p.desc{
     background-color: #f1f1f1;
 }
 
+.footprint{
+    float: left;
+    width: 75%;
+    padding-right: 20px;
+}
+.certificate{
+    float: left;
+    width: 25%;
+}
+.normal{
+    clear:left;
+}
 .fakeimg {
     background-color: #aaa;
     width: 100%;
