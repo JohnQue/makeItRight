@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
 </head>
+
 <body>
     <div class="js-clock clock"></div>
     <div class="js-weather weather"></div>
@@ -46,14 +48,22 @@
                     <img src="images/20191203_082747.jpg" style="width:100%" alt="Image">
                 </a>
                 <p class="desc">오사키 우편국 앞에서...</p>
-                <p>현재 저는 도쿄 시나가와구 고탄다 역 근처에 있는 아시아정보시스템(AIS)이라는 회사에서 글로벌 인턴십을 진행하고 있습니다. 20일에 업무를 마치고 27일 한국으로 돌아갑니다!</p>
+                <p>현재 저는 도쿄 시나가와구 고탄다 역 근처에 있는 아시아정보시스템(AIS)이라는 회사에서 글로벌 인턴십을 진행하고 있습니다. 20일에 업무를 마치고 27일 한국으로 돌아갑니다!
+                </p>
             </div>
         </div>
         <div class="midcolumn">
             <div class="card">
                 <h2>오늘의 영상</h2>
                 <h5>유투버 : inliving</h5>
-                <iframe width="100%" style="overflow:hidden; display:block; height: 42.5vh;" src="https://www.youtube.com/embed/Nlo_UxlW6bM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video">
+                    <div class="video-ratio">
+                        <iframe width="100%" style="overflow:hidden; display:block;"
+                            src="https://www.youtube.com/embed/Nlo_UxlW6bM" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
                 <p class="desc">引越し直後、無印良品の購入品</p>
                 <p>새로운 집으로 옮겨서 무인양품에서 산 물건들을 소개하는 영상</p>
             </div>
@@ -72,17 +82,19 @@
                 <h2>About Me</h2>
                 <img src="images/jonghan.jpg" style="width:100%" alt="myface">
                 <h3 style="text-align: center;">박종한, Apr 30, 1994</h3>
-                <p>가와사키 시, 가와사키 구에 거주중인 외국인 노동자. 4학년 2학기로 경기대학교 졸업을 앞두고 있는 예비 취준생. 전공은 컴퓨터과학과</p>
+                <p>경기대학교 졸업을 앞두고 있는 예비 취준생. 전공은 컴퓨터과학과. 관심분야는 프론트엔드, 백엔드, devOps(는 진짜 관심만..)</p>
             </div>
             <div class="card">
                 <h3>The path where I walked</h3>
-                
+
             </div>
             <div class="card">
                 <h3>Certificate</h3>
                 <p>2019.05.22 정보처리기사</p>
                 <p>2019.01.20 JLPT N2</p>
-                <p>2018.01.13 TOEIC 905</p>
+                <p>2018.01.13 TOEIC 905(만료)</p>
+                <p>2020.01.22 JLPT N1</p>
+                <p>2020.03.29 TOEIC, 스피킹 예정</p>
             </div>
         </div>
     </div>
@@ -91,8 +103,11 @@
         <h2>Contact Me</h2>
         <div class="contact">
             <a href="https://github.com/JohnQue" class="icon">
-                <svg class="octicon octicon-mark-github v-align-middle" height="96" viewBox="0 0 16 16" version="1.1" width="96" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                <svg class="octicon octicon-mark-github v-align-middle" height="96" viewBox="0 0 16 16" version="1.1"
+                    width="96" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                    </path>
                 </svg>
             </a>
             <a href="https://blog.naver.com/parkjh9876" class="icon">
@@ -106,4 +121,5 @@
     <script src="js/img.js"></script>
     <script src="js/fade.js"></script>
 </body>
+
 </html>
